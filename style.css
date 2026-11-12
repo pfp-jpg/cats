@@ -98,3 +98,7 @@ body {
 p {
     overflow-wrap: anywhere;
 }
+.writer {
+    font-size: 0.5rem;
+    color : rgba(100,100,100,0.6)
+}
