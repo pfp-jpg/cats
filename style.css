@@ -1,0 +1,100 @@
+@font-face{
+    font-family: "Share";
+    src: url("fonts/Share/ShareTechMono-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "TurretRoad";
+    src: url("fonts/Turret_Road/TurretRoad-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "M_PLUS_Rounded";
+    src: url("fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+.topbar {
+    position: fixed;
+    top: 0; left:0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    background: rgb(102,204,255);
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s;
+    gap: 12px;
+}
+.topicon {
+    height: 36px;
+    width: auto;
+    margin_right: 15px;
+    border-radius: 50%
+}
+.topbar_title {
+    font-family: 'TurretRoad', sans-serif;
+    text-align: right;
+    font-size: 1.2rem;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    margin: 0;
+}
+.topbar_info {
+    text-align: left;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.85rem;
+    margin-left: auto;
+}
+.topbar.hidden {
+    transform: translateY(-100%);
+}
+.body{
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 90px 16px 60px;
+    font-family: 'Share', sans-serif;
+    text-align: left;
+    border-left: 2px dashed rgba(150,150,150,0.6);
+    border-right: 2px dashed rgba(150,150,150,0.6);
+}
+.body img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    gap: 12px;
+}
+.body p{
+    ling-height : 1.8;
+}
+.url {
+    text-align: left;
+    color: rgba(100,100,100,0.6);
+    font-size: 0.65rem;
+    margin: 0;
+}
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    background: rgb(22,44,55);
+    color: white;
+    font-family: 'Share', sans-serif;
+}
+.footer a {
+    color: inherit;
+}
+.credits{
+    gap: 12px;
+    margin: 4px 0;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    overflow-wrap: anywhere;
+}
